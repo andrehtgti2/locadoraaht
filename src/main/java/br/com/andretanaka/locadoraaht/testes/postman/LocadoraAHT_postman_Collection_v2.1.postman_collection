@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "9e8c74c0-d253-42fe-bd4a-6654e07fda67",
+		"name": "LocadoraAHT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastrar Locacao 1 Sucesso",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"andre\",\n\t\"inicio\":\"2019-11-04\",\n\t\"fim\":\"2019-11-05\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/locacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"locacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Locacao 2 Sucesso",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"hiroshi\",\n\t\"inicio\":\"2019-11-04\",\n\t\"fim\":\"2019-11-09\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/locacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"locacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Locacao 3 Sucesso",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"tanaka\",\n\t\"inicio\":\"2019-11-04\",\n\t\"fim\":\"2019-11-15\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/locacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"locacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Locacao 4 Valida Data Inicio Maior que Data Fim",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"joao\",\n\t\"inicio\":\"2019-11-04\",\n\t\"fim\":\"2019-10-01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/locacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"locacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Locacao 4 Valida Cliente Ja Possui Locacao",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"andre\",\n\t\"inicio\":\"2019-11-04\",\n\t\"fim\":\"2019-11-05\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/locacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"locacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar andre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/locacao/andre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"locacao",
+						"andre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar hiroshi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/locacao/hiroshi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"locacao",
+						"hiroshi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar tanaka",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/locacao/tanaka",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"locacao",
+						"tanaka"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancelar hiroshi",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/locacao/hiroshi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"locacao",
+						"hiroshi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calcular dias restantes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/calcular-dias-restantes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calcular-dias-restantes"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
